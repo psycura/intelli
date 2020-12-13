@@ -1,7 +1,6 @@
 <templateSet group="Flutter">
   <template name="stless" value="class $NAME$ extends StatelessWidget {&#10;    static const String tag='$NAME$';&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="subject" value="  final BehaviorSubject&lt;$TYPE$&gt; _$NAME$Subject =&#10;      BehaviorSubject&lt;$TYPE$&gt;();&#10;&#10;  Stream&lt;$TYPE$&gt; get $NAME$Stream =&gt; _$NAME$Subject.stream;&#10;&#10;  Sink&lt;$TYPE$&gt; get $NAME$Sink =&gt; _$NAME$Subject.sink;&#10;  $END$" description="bloc_subject" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
