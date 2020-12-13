@@ -1,0 +1,59 @@
+<templateSet group="Flutter">
+  <template name="stless" value="class $NAME$ extends StatelessWidget {&#10;    static const String tag='$NAME$';&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="subject" value="  final BehaviorSubject&lt;$TYPE$&gt; _$NAME$Subject =&#10;      BehaviorSubject&lt;$TYPE$&gt;();&#10;&#10;  Stream&lt;$TYPE$&gt; get $NAME$Stream =&gt; _$NAME$Subject.stream;&#10;&#10;  Sink&lt;$TYPE$&gt; get $NAME$Sink =&gt; _$NAME$Subject.sink;&#10;  $END$" description="bloc_subject" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="FLUTTER" value="true" />
+    </context>
+  </template>
+  <template name="fmodel" value="import 'package:freezed_annotation/freezed_annotation.dart';&#10;import 'package:flutter/foundation.dart';&#10;&#10;part '$FILE_NAME$.freezed.dart';&#10;part '$FILE_NAME$.g.dart';&#10;&#10;@freezed&#10;abstract class $CLASSNAME$ with _$$$CLASSNAME$ {&#10;&#10;  factory $CLASSNAME$({$END$,}) = _$CLASSNAME$;&#10;&#10;  factory $CLASSNAME$.fromJson(Map&lt;String, dynamic&gt; json) =&gt; _$$$CLASSNAME$FromJson(json);&#10;&#10;}" description="Freezed model" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="capitalize(camelCase(FILE_NAME))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="FLUTTER" value="true" />
+    </context>
+  </template>
+  <template name="exeption" value="import 'package:flutter/widgets.dart';&#10;&#10;class $FILE_NAME$Exception implements Exception {&#10;&#10;  $FILE_NAME$Exception();&#10;&#10;  @override&#10;  String toString() {&#10;    return '$MESSAGE$';&#10;  }&#10;}" description="Custom Exception Class" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="FLUTTER" value="true" />
+    </context>
+  </template>
+  <template name="scrnless" value="class $NAME$ extends StatelessWidget {&#10;  static const String tag='$NAME$';&#10;  static const String path = '/$NAME$';&#10;  static const ns = '$FILENAME$';&#10;&#10;  static void open() {&#10;    Routes.sailor.navigate(path);&#10;  }&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="region" value="//#region $NAME$&#10;$END$&#10;//#endregion $NAME$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="FLUTTER" value="true" />
+    </context>
+  </template>
+  <template name="ctr" value="import 'package:get/get.dart';&#10;&#10;class $CLASSNAME$Bind extends Bindings {&#10;  @override&#10;  void dependencies() {&#10;    Get.lazyPut&lt;$CLASSNAME$&gt;(() =&gt; $CLASSNAME$());&#10;  }&#10;}&#10;&#10;class $CLASSNAME$ extends GetxController {&#10;  static const String tag = '$CLASSNAME$';&#10;&#10;  static $CLASSNAME$ get to =&gt; Get.find();&#10;  static Future&lt;bool&gt; delete ()=&gt;Get.delete&lt;$CLASSNAME$&gt;();&#10;&#10;}" description="GetController" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="FLUTTER" value="true" />
+    </context>
+  </template>
+  <template name="getset" value="final Rx&lt;$TYPE$&gt; _$NAME$ = Rx&lt;$TYPE$&gt;();&#10;  &#10;$TYPE$ get $NAME$ =&gt; _$NAME$.value;&#10;&#10;set $NAME$($TYPE$ value) =&gt; _$NAME$.value = value;" description="Geters &amp; Setters" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="FLUTTER" value="true" />
+    </context>
+  </template>
+</templateSet>
