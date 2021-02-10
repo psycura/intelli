@@ -2,6 +2,7 @@
   <component name="PlantUmlSettingsNew">
     <option name="PLANTUML_LIMIT_SIZE" value="" />
     <option name="cacheSize" value="10" />
+    <option name="customPlantumlJarPath" value="" />
     <option name="doNotDisplayErrors" value="true" />
     <option name="dotExecutable" value="/usr/local/Cellar/graphviz/2.44.1/bin/dot" />
     <option name="includedPaths" value="" />
