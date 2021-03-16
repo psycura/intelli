@@ -27,7 +27,7 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="scrnless" value="class $NAME$ extends StatelessWidget {&#10;  static const String tag='$NAME$';&#10;  static const String path = '/$NAME$';&#10;  static const ns = '$FILENAME$';&#10;&#10;  static void open() {&#10;    Get.toNamed(path);&#10;  }&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
+  <template name="scrnless" value="class $NAME$ extends StatelessWidget {&#10;  static const String tag='$NAME$';&#10;  static const String path = '/$NAME$';&#10;  static const ns = '$FILENAME$';&#10;&#10;  static void open({bool replace = false}) {&#10;    if (replace) {&#10;      Get.offNamed(path);&#10;    } else {&#10;      Get.toNamed(path);&#10;    }&#10;  }&#10;  &#10;  static void goBack() {&#10;    Get.until((route) =&gt; Get.currentRoute == path);&#10;  }&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
     <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
