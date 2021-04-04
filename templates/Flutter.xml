@@ -48,7 +48,7 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getset" value="final Rx&lt;$TYPE$&gt; _$NAME$ = Rx&lt;$TYPE$&gt;();&#10;  &#10;$TYPE$ get $NAME$ =&gt; _$NAME$.value;&#10;&#10;void set$FNAME$($TYPE$ value) =&gt; _$NAME$.value = value;" description="Geters &amp; Setters" toReformat="false" toShortenFQNames="true">
+  <template name="getset" value="final _$NAME$ = Rx&lt;$TYPE$&gt;();&#10;  &#10;$TYPE$ get $NAME$ =&gt; _$NAME$.value;&#10;&#10;void set$FNAME$($TYPE$ value) =&gt; _$NAME$.value = value;" description="Geters &amp; Setters" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="FNAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
