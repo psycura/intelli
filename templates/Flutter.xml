@@ -11,7 +11,7 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="fmodel" value="import 'package:freezed_annotation/freezed_annotation.dart';&#10;import 'package:flutter/foundation.dart';&#10;&#10;part '$FILE_NAME$.freezed.dart';&#10;part '$FILE_NAME$.g.dart';&#10;&#10;@freezed&#10;abstract class $CLASSNAME$ with _$$$CLASSNAME$ {&#10;&#10;  factory $CLASSNAME$({$END$,}) = _$CLASSNAME$;&#10;&#10;  factory $CLASSNAME$.fromJson(Map&lt;String, dynamic&gt; json) =&gt; _$$$CLASSNAME$FromJson(json);&#10;&#10;}" description="Freezed model" toReformat="false" toShortenFQNames="true">
+  <template name="fmodel" value="import 'package:freezed_annotation/freezed_annotation.dart';&#10;&#10;part '$FILE_NAME$.freezed.dart';&#10;part '$FILE_NAME$.g.dart';&#10;&#10;@freezed&#10;class $CLASSNAME$ with _$$$CLASSNAME$ {&#10;&#10;  factory $CLASSNAME$({$END$,}) = _$CLASSNAME$;&#10;&#10;  factory $CLASSNAME$.fromJson(Map&lt;String, dynamic&gt; json) =&gt; _$$$CLASSNAME$FromJson(json);&#10;&#10;}" description="Freezed model" toReformat="false" toShortenFQNames="true">
     <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <variable name="CLASSNAME" expression="capitalize(camelCase(FILE_NAME))" defaultValue="" alwaysStopAt="true" />
     <context>
