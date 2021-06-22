@@ -41,7 +41,7 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="ctr" value="import 'package:get/get.dart';&#10;&#10;class $CLASSNAME$Bind extends Bindings {&#10;  @override&#10;  void dependencies() {&#10;    Get.lazyPut&lt;$CLASSNAME$&gt;(() =&gt; $CLASSNAME$());&#10;  }&#10;}&#10;&#10;class $CLASSNAME$ extends GetxController {&#10;  static const String tag = '$CLASSNAME$';&#10;&#10;  static $CLASSNAME$ get to =&gt; Get.find();&#10;  static Future&lt;bool&gt; delete ()=&gt;Get.delete&lt;$CLASSNAME$&gt;();&#10;&#10;}" description="GetController" toReformat="false" toShortenFQNames="true">
+  <template name="ctr" value="import 'package:get/get.dart';&#10;&#10;class $CLASSNAME$Bind extends Bindings {&#10;  @override&#10;  void dependencies() {&#10;    Get.lazyPut&lt;$CLASSNAME$&gt;(() =&gt; $CLASSNAME$());&#10;  }&#10;}&#10;&#10;class $CLASSNAME$ extends GetxController {&#10;  static const String tag = '$CLASSNAME$';&#10;  &#10;  static void put() =&gt; Get.put&lt;$CLASSNAME$&gt;($CLASSNAME$(), permanent: true,);&#10;&#10;  static void lazyPut() =&gt; Get.lazyPut&lt;$CLASSNAME$&gt;(&#10;        () =&gt; $CLASSNAME$(),&#10;        fenix: true,&#10;      );&#10;&#10;  static $CLASSNAME$ get to =&gt; Get.find();&#10;  &#10;  static Future&lt;bool&gt; delete ()=&gt;Get.delete&lt;$CLASSNAME$&gt;(force: true);&#10;&#10;}" description="GetController" toReformat="false" toShortenFQNames="true">
     <variable name="CLASSNAME" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART" value="true" />
