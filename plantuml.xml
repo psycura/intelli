@@ -8,6 +8,12 @@
     <option name="dotExecutable" value="/usr/local/Cellar/graphviz/2.48.0/bin/dot" />
     <option name="includedPaths" value="" />
     <option name="lastBundledVersion" value="1.2021.7" />
+    <option name="lastExportDir" value="$USER_HOME$/Downloads" />
+    <option name="previewSettings">
+      <PreviewSettings>
+        <option name="splitEditorLayout" value="Show preview only" />
+      </PreviewSettings>
+    </option>
     <option name="rememberLastExportDir" value="true" />
     <option name="showUrlLinksBorder" value="true" />
     <option name="switchToBundledAfterUpdate" value="false" />
