@@ -1,0 +1,16 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="contrastMode" value="true" />
+    <option name="isContrastMode" value="true" />
+    <option name="isWizardShown" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="treeFontSizeEnabled" value="true" />
+    <option name="tabFontSizeEnabled" value="true" />
+    <option name="treeFontSize" value="16" />
+    <option name="tabFontSize" value="14" />
+    <option name="settingsSelectedTab" value="2" />
+    <option name="accentColor" value="009688" />
+    <option name="userId" value="1f3cdb9b:16f997fc983:-8000" />
+    <option name="version" value="6.8.1.2" />
+  </component>
+</application>

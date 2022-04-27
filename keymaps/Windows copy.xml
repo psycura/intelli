@@ -1,0 +1,15 @@
+<keymap version="1" name="Windows copy" parent="$default">
+  <action id="FileChooser.NewFile">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
+  <action id="FileChooser.NewFolder">
+    <keyboard-shortcut first-keystroke="alt insert" />
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
+  <action id="GotoChangedFile" />
+  <action id="GotoClass" />
+  <action id="GotoFile" />
+  <action id="NewFile">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
+</keymap>
