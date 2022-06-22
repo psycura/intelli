@@ -4,16 +4,23 @@
       <mapping pattern="regimen_step_exceptions" type="AUTO_DETECTED" />
       <mapping pattern="hcp_repo" type="AUTO_DETECTED" />
       <mapping pattern="sp_animation_controller" type="AUTO_DETECTED" />
+      <mapping pattern="dark_list" type="AUTO_DETECTED" />
+      <mapping pattern="RRTSSCR_550_133" type="AUTO_DETECTED" />
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="Podfile" type="PLAIN_TEXT" />
       <mapping ext="pak" type="PLAIN_TEXT" />
       <mapping ext="aps" type="PLAIN_TEXT" />
+      <mapping ext="pvk" type="PLAIN_TEXT" />
       <mapping ext="cur" type="PLAIN_TEXT" />
       <mapping ext="vsidx" type="PLAIN_TEXT" />
+      <mapping ext="gfh" type="PLAIN_TEXT" />
+      <mapping ext="spc" type="PLAIN_TEXT" />
+      <mapping ext="gfd" type="PLAIN_TEXT" />
       <mapping ext="pem" type="PLAIN_TEXT" />
       <mapping ext="cer" type="PLAIN_TEXT" />
+      <mapping ext="dict" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="psd" approved="true" type="Image" />
     </extensionMap>
